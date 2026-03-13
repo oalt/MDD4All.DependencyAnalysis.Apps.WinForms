@@ -2,3 +2,7 @@
 	path = src/MDD4All.DependencyAnalysis.DataModels
 	url = https://github.com/oalt/MDD4All.DependencyAnalysis.DataModels.git
 	branch = dev
+[submodule "src/MDD4All.DependencyAnalysis.Analyzers"]
+	path = src/MDD4All.DependencyAnalysis.Analyzers
+	url = https://github.com/oalt/MDD4All.DependencyAnalysis.Analyzers.git
+	branch = dev
