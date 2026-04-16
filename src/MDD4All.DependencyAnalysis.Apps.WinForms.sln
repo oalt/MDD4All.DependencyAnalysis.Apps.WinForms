@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDD4All.DependencyAnalysis.Apps.WinForms", "MDD4All.DependencyAnalysis.Apps.WinForms\MDD4All.DependencyAnalysis.Apps.WinForms.csproj", "{AD54F5A1-D335-457A-BA14-5F33E7A71439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Apps", "1_Apps", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Components", "4_Components", "{0C099880-54CD-45A8-9DDE-2593A9CFDC77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_DataModels", "7_DataModels", "{3EDD4F89-959B-4634-959E-FB0D50142BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDD4All.DependencyAnalysis.DataModels-dev", "MDD4All.DependencyAnalysis.DataModels\src\MDD4All.DependencyAnalysis.DataModels\MDD4All.DependencyAnalysis.DataModels-dev.csproj", "{3196BD0F-BE99-3577-C5E9-317B1AF28221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDD4All.DependencyAnalysis.Analyzers-dev", "MDD4All.DependencyAnalysis.Analyzers\src\MDD4All.DependencyAnalysis.Analyzers\MDD4All.DependencyAnalysis.Analyzers-dev.csproj", "{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD54F5A1-D335-457A-BA14-5F33E7A71439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD54F5A1-D335-457A-BA14-5F33E7A71439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD54F5A1-D335-457A-BA14-5F33E7A71439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD54F5A1-D335-457A-BA14-5F33E7A71439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3196BD0F-BE99-3577-C5E9-317B1AF28221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3196BD0F-BE99-3577-C5E9-317B1AF28221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3196BD0F-BE99-3577-C5E9-317B1AF28221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3196BD0F-BE99-3577-C5E9-317B1AF28221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD54F5A1-D335-457A-BA14-5F33E7A71439} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3196BD0F-BE99-3577-C5E9-317B1AF28221} = {3EDD4F89-959B-4634-959E-FB0D50142BBE}
+		{F8D96A1E-7BE5-9DB1-995B-D8391312D4CD} = {0C099880-54CD-45A8-9DDE-2593A9CFDC77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADC8748C-41A1-4C57-B228-7AA93114D66E}
+	EndGlobalSection
+EndGlobal
