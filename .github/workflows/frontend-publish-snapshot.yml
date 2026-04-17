@@ -41,25 +41,25 @@ jobs:
 
     - name: Create output directories
       run: |
-        mkdir output
         mkdir artifacts
+        mkdir artifacts\WindowsDependencyGenerator_${{env.VERSION}}
 
     - name: Copy app files
       run: |
-        robocopy /E .\src\MDD4All.DependencyAnalysis.Apps.WinForms\bin\Release\net8.0-windows\publish\win-x86\ output\
+        robocopy /E .\src\MDD4All.DependencyAnalysis.Apps.WinForms\bin\Release\net8.0-windows\publish\win-x86\ artifacts\WindowsDependencyGenerator_${{env.VERSION}}
         if ($lastexitcode -lt 8) { exit 0 } else { exit 1 }
 
-    - name: Zip app files
-      uses: thedoctor0/zip-release@0.7.1
-      with:
-        directory: output\
-        filename: WindowsDependencyGenerator_${{env.VERSION}}.zip
+    #- name: Zip app files
+    #  uses: thedoctor0/zip-release@0.7.1
+    #  with:
+    #    directory: output\
+    #    filename: WindowsDependencyGenerator_${{env.VERSION}}.zip
 
-    - name: Copy zip file to dist directory
-      run: xcopy /y .\output\WindowsDependencyGenerator_${{env.VERSION}}.zip .\artifacts\
+    #- name: Copy zip file to dist directory
+    #  run: xcopy /y .\output\WindowsDependencyGenerator_${{env.VERSION}}.zip .\artifacts\
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: WindowsDependencyGenerator_${{env.VERSION}}
-        path: artifacts\*.zip
+        path: artifacts\**\*.*
